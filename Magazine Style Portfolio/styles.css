@@ -9,10 +9,26 @@ html {
   scroll-behavior: smooth;
 }
 
+.dark-mode {
+  background-color: #333;
+  color: #f4f4f4;
+}
+#toggle {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  border: none;
+  outline: none;
+}
 /* Hero Section */
 .hero {
-  background: url("https://via.placeholder.com/1920x1080") no-repeat center
-    center/cover;
+  background: url("https://cdn.pixabay.com/photo/2023/11/07/06/52/forest-8371211_1280.jpg")
+    no-repeat center center/cover;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -86,4 +102,26 @@ html {
 /* Smooth Scrolling */
 html {
   scroll-behavior: smooth;
+}
+.dark-mode .hero {
+  background: url("https://cdn.pixabay.com/photo/2023/11/07/06/52/forest-8371211_1280.jpg")
+    no-repeat center center/cover fixed;
+  background-color: #333;
+}
+
+.dark-mode .hero-text {
+  color: #f4f4f4;
+}
+
+.dark-mode .project-section {
+  background-color: #333;
+}
+
+.dark-mode .project-text h2,
+.dark-mode .project-text p {
+  color: #f4f4f4;
+}
+
+.dark-mode .project-image img {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
 }

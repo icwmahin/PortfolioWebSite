@@ -15,3 +15,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+// Toggle Dark Mode Functionality
+document.getElementById("toggle").addEventListener("click", function () {
+  const body = document.getElementById("body");
+  body.classList.toggle("dark-mode");
+});
