@@ -3,6 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Split-Screen Interactive Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -12,11 +19,25 @@
       <!-- Left Side: Vertical List of Projects -->
       <div class="project-list">
         <ul>
-          <li data-project="1" class="project-item active">Project One</li>
-          <li data-project="2" class="project-item">Project Two</li>
-          <li data-project="3" class="project-item">Project Three</li>
+          <li data-project="1" class="project-item active">
+            <i class="fa-solid fa-house" style="color: #ffffff"></i>
+          </li>
+          <li data-project="2" class="project-item">
+            <i class="fa-solid fa-address-card" style="color: #ffffff"></i>
+          </li>
+          <li data-project="3" class="project-item">
+            <i class="fa-solid fa-code" style="color: #ffffff"></i>
+          </li>
           <li data-project="4" class="project-item">Project Four</li>
-          <li data-project="5" class="project-item">Project Five</li>
+          <li data-project="5" class="project-item">
+            <i class="fa-solid fa-user" style="color: #ffffff"></i>
+          </li>
+          <li data-project="6" class="project-item">
+            <i class="fa-solid fa-user" style="color: #ffffff"></i>
+          </li>
+          <li data-project="7" class="project-item">
+            <i class="fa-solid fa-user" style="color: #ffffff"></i>
+          </li>
         </ul>
       </div>
 
@@ -30,6 +51,7 @@
           </p>
           <img src="project1.jpg" alt="Project One Preview" />
         </div>
+
         <div id="project-2" class="project-content">
           <h2>Project Two: Mobile App Design</h2>
           <p>
@@ -64,8 +86,26 @@
           </p>
           <img src="project5.jpg" alt="Project Five Preview" />
         </div>
-      </div>
-    </div>
+        <!-- test -->
+        <div id="project-6" class="project-content">
+          <h2>Hola</h2>
+          <p>
+            This project focuses on data visualization using D3.js, displaying
+            complex datasets in an easily understandable and visually appealing
+            way.
+          </p>
+          <img src="project6.jpg" alt="Project Five Preview" />
+        </div>
+        <!-- none -->
+        <div id="project-7" class="project-content">
+          <h2>Hol asdfa</h2>
+          <p>
+            This project focuses on data visualization using D3.js, displaying
+            complex datasets in an easily understandable and visually appealing
+            way.
+          </p>
+          <img src="project5.jpg" alt="Project Five Preview" />
+        </div>
 
     <!-- JavaScript for Hover-triggered Dynamic Content -->
     <script src="script.js"></script>
