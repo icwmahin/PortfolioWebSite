@@ -62,10 +62,16 @@ header nav ul li a:hover {
 #intro {
   background: linear-gradient(rgba(34, 34, 34, 0.5), rgba(34, 34, 34, 0.5)),
     url("https://cdn.pixabay.com/photo/2022/11/24/21/25/oak-7615084_1280.jpg");
+  background-repeat: none;
+  background-position: center;
+  background-size: cover;
 }
 
 #projects {
   background: url("https://cdn.pixabay.com/photo/2024/05/22/14/54/flowers-8780868_960_720.jpg");
+  background-repeat: none;
+  background-position: center;
+  background-size: cover;
 }
 
 #contact {
