@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Morphic Facebook-Like UI</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Top Navigation Bar -->
+    <div class="top-nav neumorphic">
+      <div class="logo">MorphoLogo</div>
+      <div class="search-bar">
+        <input type="text" placeholder="Search..." />
+      </div>
+      <div class="user-options">
+        <img
+          src="https://cdn.pixabay.com/photo/2022/07/03/21/43/mountain-7300017_1280.jpg"
+          alt="Profile"
+          class="profile-img"
+        />
+        <span class="badge">3</span>
+        <i class="fas fa-bell"></i>
+        <i class="fas fa-envelope"></i>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <div class="left-sidebar neumorphic">
+        <ul>
+          <li>Home</li>
+          <li>Watch</li>
+          <li>Marketplace</li>
+          <li>Groups</li>
+        </ul>
+      </div>
+
+      <div class="news-feed neumorphic">
+        <div class="post-composer neumorphic">
+          <img
+            src="https://cdn.pixabay.com/photo/2022/07/03/21/43/mountain-7300017_1280.jpg"
+            alt="Profile"
+            class="profile-img"
+          />
+          <textarea placeholder="What's on your mind?"></textarea>
+        </div>
+        <div class="post neumorphic">
+          <div class="post-header">
+            <img
+              src="https://cdn.pixabay.com/photo/2022/07/03/21/43/mountain-7300017_1280.jpg"
+              alt="Profile"
+              class="profile-img"
+            />
+            <div class="post-user-info">
+              <strong>User Name</strong>
+              <p>2 hours ago</p>
+            </div>
+          </div>
+          <p>This is a sample post content.</p>
+          <div class="post-img">
+            <img
+              src="https://cdn.pixabay.com/photo/2022/07/03/21/43/mountain-7300017_1280.jpg"
+              alt="Post Image"
+            />
+          </div>
+          <div class="post-actions">
+            <button class="neumorphic-btn">Like</button>
+            <button class="neumorphic-btn">Comment</button>
+            <button class="neumorphic-btn">Share</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="right-sidebar neumorphic">
+        <h3>Recent Chats</h3>
+        <div class="chat">
+          <p>Friend 1</p>
+          <p>Friend 2</p>
+        </div>
+        <h3>Suggestions</h3>
+        <div class="suggestion">
+          <p>Suggested Friend 1</p>
+          <p>Suggested Friend 2</p>
+        </div>
+      </div>
+    </div>
+
+    <footer class="neumorphic">
+      <ul>
+        <li>Privacy</li>
+        <li>Terms</li>
+        <li>Help</li>
+      </ul>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
