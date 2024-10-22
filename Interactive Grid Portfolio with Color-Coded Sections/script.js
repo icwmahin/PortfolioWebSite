@@ -11,7 +11,7 @@ filterButtons.forEach((button) => {
 
     // Loop through project boxes and display based on selected filter
     projectBoxes.forEach((box) => {
-      if (filter === "all" || box.getAttribute("data-category") === filter) {
+      if (filter === "all" || box.dataset.category === filter) {
         box.style.display = "block"; // Show project
       } else {
         box.style.display = "none"; // Hide project
