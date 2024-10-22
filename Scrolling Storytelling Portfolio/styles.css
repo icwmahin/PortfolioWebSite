@@ -64,7 +64,8 @@ body {
 
 /* Conclusion Section */
 .conclusion {
-  background-color: #444;
+  background: conic-gradient(#e9ac67, #e9ac67, #778da9, #778da9, #e9ac67);
+  backdrop-filter: blur(10px);
   display: flex;
   justify-content: center;
   align-items: center;
