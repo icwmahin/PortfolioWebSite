@@ -8,7 +8,7 @@
 
 body {
   background-color: #e0e0e0;
-  color: #333;
+  color: #333; /* Default text color (black) in light mode */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,20 +16,20 @@ body {
   min-height: 100vh;
 }
 
-/* Header Section */
-.header {
-  text-align: center;
-  padding: 50px 0;
+.dark-mode {
+  background-color: #333;
+  color: #fff; /* Text color for dark mode (white) */
 }
 
+/* Header Section */
 .header h1 {
   font-size: 3rem;
-  color: #444;
+  color: inherit; /* Inherit color based on dark/light mode */
 }
 
 .header p {
   font-size: 1.2rem;
-  color: #666;
+  color: inherit; /* Inherit color based on dark/light mode */
 }
 
 /* Portfolio Section */
@@ -54,22 +54,33 @@ body {
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  transition: all 0.75s ease;
+}
+
+.dark-mode .card {
+  background-color: #333;
+  box-shadow: 8px 8px 16px #444, -8px -8px 16px #222;
 }
 
 .card:hover {
+  transition: all 0.75s ease;
   box-shadow: inset 8px 8px 16px #bebebe, inset -8px -8px 16px #ffffff;
+}
+
+.dark-mode .card:hover {
+  box-shadow: inset 8px 8px 16px #444, inset -8px -8px 16px #222;
 }
 
 /* Card Content */
 .card-content h2 {
   font-size: 1.8rem;
   margin-bottom: 10px;
-  color: #444;
+  color: inherit; /* Inherit color based on dark/light mode */
 }
 
 .card-content p {
   font-size: 1rem;
-  color: #666;
+  color: inherit; /* Inherit color based on dark/light mode */
   margin-bottom: 20px;
 }
 
@@ -82,9 +93,30 @@ body {
   box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
   border: none;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.75s ease;
 }
 
 .neomorph-btn:hover {
   box-shadow: inset 5px 5px 10px #bebebe, inset -5px -5px 10px #ffffff;
+}
+
+.dark-mode .neomorph-btn {
+  background-color: #333;
+  box-shadow: 5px 5px 10px #444, -5px -5px 10px #222;
+}
+
+.dark-mode .neomorph-btn:hover {
+  box-shadow: inset 5px 5px 10px #444, inset -5px -5px 10px #222;
+}
+
+#toggle {
+  color: #222;
+  background: transparent;
+  filter: drop-shadow(2 2 2px #222);
+  border: none;
+  cursor: pointer;
+}
+
+.dark-mode #toggle {
+  color: #fff; /* Invert the icon color in dark mode */
 }

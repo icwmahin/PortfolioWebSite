@@ -4,9 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Neomorphic UI Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body id="body">
+    <!-- Dark Mode Toggle Button -->
+    <div class="toggle-container">
+      <button
+        id="toggle"
+        class="dark-mode-toggle"
+        aria-label="Toggle Dark Mode"
+      >
+        <i class="fas fa-moon"></i>
+      </button>
+    </div>
+
     <!-- Header Section -->
     <header class="header">
       <div class="container">
@@ -15,8 +30,8 @@
       </div>
     </header>
 
-    <!-- Portfolio Section -->
-    <section class="portfolio">
+    <!-- Main Portfolio Section -->
+    <main class="portfolio">
       <div class="container">
         <!-- Project Card 1 -->
         <div class="card">
@@ -51,9 +66,8 @@
           </div>
         </div>
       </div>
-    </section>
+    </main>
 
-    <!-- Smooth Scroll JavaScript -->
     <script src="script.js"></script>
   </body>
 </html>
