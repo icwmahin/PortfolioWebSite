@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Split-Screen Interactive Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Main Container for Split-Screen Layout -->
+    <div class="split-screen-container">
+      <!-- Left Side: Vertical List of Projects -->
+      <div class="project-list">
+        <ul>
+          <li data-project="1" class="project-item active">Project One</li>
+          <li data-project="2" class="project-item">Project Two</li>
+          <li data-project="3" class="project-item">Project Three</li>
+          <li data-project="4" class="project-item">Project Four</li>
+          <li data-project="5" class="project-item">Project Five</li>
+        </ul>
+      </div>
+
+      <!-- Right Side: Detailed Previews of Selected Projects -->
+      <div class="project-details">
+        <div id="project-1" class="project-content active">
+          <h2>Project One: Dynamic Web App</h2>
+          <p>
+            This project showcases a dynamic web application built using React
+            and Node.js, featuring real-time data processing.
+          </p>
+          <img src="project1.jpg" alt="Project One Preview" />
+        </div>
+        <div id="project-2" class="project-content">
+          <h2>Project Two: Mobile App Design</h2>
+          <p>
+            A mobile app design prototype developed with Figma, focusing on user
+            experience and seamless navigation.
+          </p>
+          <img src="project2.jpg" alt="Project Two Preview" />
+        </div>
+        <div id="project-3" class="project-content">
+          <h2>Project Three: Branding and Identity</h2>
+          <p>
+            A branding project focused on creating a consistent visual identity
+            for a new tech startup, incorporating logo design, color palettes,
+            and typography.
+          </p>
+          <img src="project3.jpg" alt="Project Three Preview" />
+        </div>
+        <div id="project-4" class="project-content">
+          <h2>Project Four: E-Commerce Website</h2>
+          <p>
+            An e-commerce platform built with Shopify, including custom product
+            pages, shopping cart functionality, and payment integrations.
+          </p>
+          <img src="project4.jpg" alt="Project Four Preview" />
+        </div>
+        <div id="project-5" class="project-content">
+          <h2>Project Five: Data Visualization</h2>
+          <p>
+            This project focuses on data visualization using D3.js, displaying
+            complex datasets in an easily understandable and visually appealing
+            way.
+          </p>
+          <img src="project5.jpg" alt="Project Five Preview" />
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript for Hover-triggered Dynamic Content -->
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Press Start 2P", sans-serif; /* Retro pixelated font */
+  background-color: #000;
+  color: #fff;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#arcade-container {
+  text-align: center;
+  max-width: 600px;
+}
+
+.title {
+  font-size: 3rem;
+  color: #ffcc00;
+  text-shadow: 2px 2px 5px #000;
+}
+
+.menu {
+  margin-top: 20px;
+}
+
+.menu-item {
+  background-color: #333;
+  color: #ffcc00;
+  padding: 20px;
+  margin: 10px 0;
+  border: 3px solid #ffcc00;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.menu-item:hover {
+  background-color: #ff9900;
+  transform: scale(1.05);
+}
+
+.menu-item span {
+  display: block;
+  font-size: 1.5rem;
+}
+
+#level-content {
+  margin-top: 30px;
+  font-size: 1.5rem;
+  color: #ffcc00;
+}
+
+.instructions {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+/* Pixel Art Animation for Retro Feel */
+@keyframes pixelate {
+  0%,
+  100% {
+    transform: scale(1) translateX(0);
+  }
+  50% {
+    transform: scale(1.05) translateX(5px);
+  }
+}
+.menu-item:hover {
+  animation: pixelate 0.2s infinite;
+}

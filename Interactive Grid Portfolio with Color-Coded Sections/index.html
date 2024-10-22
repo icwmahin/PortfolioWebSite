@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Grid Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <h1>My Interactive Portfolio</h1>
+      <div class="filters">
+        <button class="filter-btn" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web-design">Web Design</button>
+        <button class="filter-btn" data-filter="branding">Branding</button>
+        <button class="filter-btn" data-filter="3d-work">3D Work</button>
+      </div>
+    </header>
+
+    <!-- Portfolio Grid Section -->
+    <div class="portfolio-grid">
+      <!-- Project Box 1 -->
+      <div class="project-box web-design" data-category="web-design">
+        <div class="project-info">
+          <h2>Web Project 1</h2>
+          <p>A brief description of the web project...</p>
+        </div>
+      </div>
+
+      <!-- Project Box 2 -->
+      <div class="project-box branding" data-category="branding">
+        <div class="project-info">
+          <h2>Branding Project 1</h2>
+          <p>A brief description of the branding project...</p>
+        </div>
+      </div>
+
+      <!-- Project Box 3 -->
+      <div class="project-box 3d-work" data-category="3d-work">
+        <div class="project-info">
+          <h2>3D Project 1</h2>
+          <p>A brief description of the 3D project...</p>
+        </div>
+      </div>
+
+      <!-- Project Box 4 -->
+      <div class="project-box web-design" data-category="web-design">
+        <div class="project-info">
+          <h2>Web Project 2</h2>
+          <p>A brief description of the web project...</p>
+        </div>
+      </div>
+
+      <!-- Additional project boxes can be added here -->
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

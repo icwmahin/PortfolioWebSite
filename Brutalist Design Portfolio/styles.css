@@ -1,0 +1,93 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f0f0f0; /* Light background for contrast */
+}
+
+/* Portfolio Container */
+.portfolio-container {
+  display: grid;
+  grid-template-rows: auto repeat(3, 1fr) auto; /* Dynamic height for sections */
+}
+
+/* Navigation Bar */
+.nav-bar {
+  background-color: #333; /* Dark background for the nav */
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.nav-bar h1 {
+  font-size: 3rem; /* Large title for emphasis */
+}
+
+.nav-bar ul {
+  list-style-type: none;
+}
+
+.nav-bar li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.nav-bar a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+/* Portfolio Section Styles */
+.portfolio-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  background-color: white;
+  border-bottom: 5px solid #ccc; /* Divider between sections */
+}
+
+.content {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 2.5rem; /* Bold heading */
+  margin: 20px 0;
+  font-weight: bold; /* Emphasis on text */
+}
+
+p {
+  font-size: 1.2rem; /* Readable paragraph text */
+}
+
+/* Oversized Imagery */
+img {
+  width: 100%;
+  max-width: 800px; /* Limit image size */
+  height: auto;
+  margin-top: 20px;
+}
+
+/* Raw, Unconventional Design Choices */
+.portfolio-section:nth-child(odd) {
+  background-color: #efefef; /* Alternating background for sections */
+}
+
+.portfolio-section:nth-child(even) {
+  background-color: #ddd; /* Lighter gray for contrast */
+}
+
+/* Minimal Animations with High Contrast */
+.portfolio-section:hover {
+  transform: scale(1.02); /* Slight zoom effect on hover */
+  transition: transform 0.3s; /* Transition for hover effect */
+}
