@@ -5,20 +5,23 @@
   box-sizing: border-box;
   font-family: "Arial", sans-serif;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
-  background-color: #f4f4f4;
-  color: #333;
+  background-color: #0d1b2a;
 }
 
 /* Sticky Navigation */
 .sticky-nav {
   position: sticky;
   top: 0;
-  background-color: #333;
+  background-color: #778da9;
+
   padding: 10px 0;
   z-index: 100;
   text-align: center;
+  box-shadow: 0px 0px 6px 2px #778da96e;
 }
 
 .sticky-nav ul {
@@ -29,49 +32,53 @@ body {
 }
 
 .sticky-nav ul li a {
-  color: white;
+  color: #0d1b2a;
+  font-weight: 700;
   text-decoration: none;
   font-size: 1.2rem;
   transition: color 0.3s ease;
 }
 
 .sticky-nav ul li a:hover {
-  color: #ffcc00;
+  color: #88cfff;
 }
 
 /* About Section */
 .about-section {
   text-align: center;
   padding: 50px 20px;
-  background-color: #fff;
+  background-color: #1b263b;
 }
 
 .about-section h1 {
+  color: #e0e1dd;
   font-size: 2.5rem;
   margin-bottom: 20px;
 }
 
 .about-section p {
   font-size: 1.2rem;
-  color: #555;
+  color: #778da9;
 }
 
 /* Masonry Grid Portfolio Section */
 .portfolio-section {
+  width: 60%;
+  margin: 0 auto;
   padding: 50px 20px;
-  background-color: #e0e0e0;
+  background-color: #0d1b2a;
 }
-
+/* !grid container */
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-auto-rows: 200px;
-  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: 300px;
+  grid-gap: 15px;
 }
 
 /* Grid Item Styles */
 .grid-item {
-  background-color: #fff;
+  background-color: #e0e1dd;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
@@ -89,7 +96,7 @@ body {
 
 /* Hover Animation for Grid Items */
 .grid-item:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 
 .grid-item .content h2 {
@@ -104,16 +111,17 @@ body {
 /* Contact Section */
 .contact-section {
   text-align: center;
-  padding: 50px 20px;
-  background-color: #fff;
+  padding: 10px 10px;
+  background-color: #1b263b;
+  color: white;
 }
 
 .contact-section h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
+  font-size: 1em;
+  margin-bottom: 10px;
 }
 
 .contact-section p {
-  font-size: 1.1rem;
+  font-size: 0.9em;
   color: #555;
 }
