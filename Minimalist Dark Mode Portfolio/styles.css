@@ -60,15 +60,19 @@ header nav ul li a:hover {
 }
 
 #intro {
-  background: #444;
+  background: linear-gradient(rgba(34, 34, 34, 0.5), rgba(34, 34, 34, 0.5)),
+    url("https://cdn.pixabay.com/photo/2022/11/24/21/25/oak-7615084_1280.jpg");
 }
 
 #projects {
-  background: #555;
+  background: url("https://cdn.pixabay.com/photo/2024/05/22/14/54/flowers-8780868_960_720.jpg");
 }
 
 #contact {
-  background: #666;
+  background: url("https://cdn.pixabay.com/photo/2023/10/13/17/10/mushroom-8313142_640.jpg");
+  background-repeat: none;
+  background-position: center;
+  background-size: cover;
 }
 
 .content h2 {
@@ -83,6 +87,7 @@ header nav ul li a:hover {
 }
 
 .project-item {
+  margin: 0.5em;
   background-color: #333;
   padding: 20px;
   border-radius: 8px;
@@ -92,7 +97,7 @@ header nav ul li a:hover {
 
 .project-item:hover {
   transform: scale(1.05);
-  background-color: #ff9800; /* Highlight effect */
+  background-color: #0c0024; /* Highlight effect */
 }
 
 footer {
