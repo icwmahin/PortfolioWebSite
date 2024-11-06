@@ -37,11 +37,13 @@ body {
   box-shadow: inset 8px 8px 16px var(--shadow-dark),
     inset -8px -8px 16px var(--shadow-light);
 }
+
 #profile {
   height: 50px;
   width: 50px;
   border-radius: 50%;
 }
+
 .project-item {
   list-style: none;
   padding: 15px;
@@ -84,6 +86,7 @@ body {
   box-shadow: inset 8px 8px 16px var(--shadow-dark),
     inset -8px -8px 16px var(--shadow-light);
 }
+
 #item-image {
   height: auto;
   width: 400px;
@@ -108,15 +111,18 @@ body {
     flex-direction: column;
     padding: 10px;
   }
+
   .project-list {
     width: 100%;
     height: auto;
     margin-bottom: 10px;
   }
+
   .project-details {
     width: 100%;
     height: auto;
   }
+
   #item-image {
     width: 100%;
     columns: 1;
@@ -127,9 +133,11 @@ body {
   .project-item {
     font-size: 1rem;
   }
+
   .project-list {
     padding: 10px;
   }
+
   .project-details {
     padding: 10px;
   }

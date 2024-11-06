@@ -1,203 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <title>Split-Screen Interactive Portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <!-- Main Container for Split-Screen Layout -->
-    <div class="split-screen-container">
-      <!-- Left Side: Vertical List of Projects -->
-      <div class="project-list">
-        <ul>
-          <!-- first nav bar -->
-          <li data-project="1" class="project-item active">
-            <abbr title="Home">
-              <i class="fa-solid fa-house" style="color: #000000"></i>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Split-Screen Interactive Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Main Container for Split-Screen Layout -->
+  <div class="split-screen-container">
+    <!-- Left Side: Vertical List of Projects -->
+    <div class="project-list">
+      <ul>
+        <!-- first nav bar -->
+        <li data-project="1" class="project-item active">
+          <abbr title="Home">
+            <i class="fa-solid fa-house" style="color: #000000"></i>
           </abbr>
           <span class="linksSub">
             home
           </span>
-          </li>
+        </li>
 
-          <!-- second nav bar  -->
-          <li data-project="2" class="project-item">
-            <abbr title="about me">
-              <i class="fa-solid fa-user" style="color: #ffffff"></i>
-            </abbr>
-            <span class="linksSub">
-              about
-            </span>
-          </li>
-          <!-- third nav bar -->
-          <li data-project="3" class="project-item">
-            <abbr title="programming works">
-              <i class="fa-solid fa-code" style="color: #ffffff"></i>
-            </abbr>
-            <span class="linksSub">
-              code
-            </span>
-          </li>
-          <!-- fourth nav bar -->
-          <li data-project="4" class="project-item">
-            <abbr title="Graphic and video">
-              <i class="fa-solid fa-palette" style="color: #ffffff"></i>
-            </abbr>
-            <span class="linksSub">
-             Graphic
-            </span>
-          </li>
-          <!-- fifth nav bar  -->
-          <li data-project="5" class="project-item">
-            <abbr title="Cources">
-              <i class="fa-solid fa-book" style="color: #ffffff"></i>
-            </abbr>
-            <span class="linksSub">
-              courses
-            </span>
-            </i>
-          </li>
-          <!-- sixth nav bar -->
-          <li data-project="6" class="project-item">
-            <abbr title="my groth">
-              <i class="fa-solid fa-chart-line" style="color: #ffffff"></i>
-            </abbr>
-            <span class="linksSub">
-              growth
-            </span>
-          </li>
-          <!-- seventh nav bar -->
-          <li data-project="7" class="project-item">
-            <abbr title="Contact">
-              <i class="fa-solid fa-envelope" style="color: #ffffff"></i>
-            </abbr>
-            <span class="linksSub">
-              contact
-            </span>
-          </li>
-          <!-- End of Project List -->
-        </ul>
+        <!-- second nav bar  -->
+        <li data-project="2" class="project-item">
+          <abbr title="about me">
+            <i class="fa-solid fa-user" style="color: #ffffff"></i>
+          </abbr>
+          <span class="linksSub">
+            about
+          </span>
+        </li>
+        <!-- third nav bar -->
+        <li data-project="3" class="project-item">
+          <abbr title="programming works">
+            <i class="fa-solid fa-code" style="color: #ffffff"></i>
+          </abbr>
+          <span class="linksSub">
+            code
+          </span>
+        </li>
+        <!-- fourth nav bar -->
+        <li data-project="4" class="project-item">
+          <abbr title="Graphic and video">
+            <i class="fa-solid fa-palette" style="color: #ffffff"></i>
+          </abbr>
+          <span class="linksSub">
+            Graphic
+          </span>
+        </li>
+        <!-- fifth nav bar  -->
+        <li data-project="5" class="project-item">
+          <abbr title="Cources">
+            <i class="fa-solid fa-book" style="color: #ffffff"></i>
+          </abbr>
+          <span class="linksSub">
+            courses
+          </span>
+          </i>
+        </li>
+        <!-- sixth nav bar -->
+        <li data-project="6" class="project-item">
+          <abbr title="my groth">
+            <i class="fa-solid fa-chart-line" style="color: #ffffff"></i>
+          </abbr>
+          <span class="linksSub">
+            growth
+          </span>
+        </li>
+        <!-- seventh nav bar -->
+        <li data-project="7" class="project-item">
+          <abbr title="Contact">
+            <i class="fa-solid fa-envelope" style="color: #ffffff"></i>
+          </abbr>
+          <span class="linksSub">
+            contact
+          </span>
+        </li>
+        <!-- End of Project List -->
+      </ul>
+    </div>
+
+    <!-- Right Side: Detailed Previews of Selected Projects -->
+    <div class="project-details">
+      <div id="project-1" class="project-content active">
+        <div class="homeHeading">
+          <img src="logo.webp" alt="logo-image" id="profile">
+          <h2>Hi IT's me I can do... </h2>
+        </div>
+        <p>
+          Professional and Creative Web Development. I am a full stack developer.I can duplicate any website.
+          and i can Do video editing. <strong>Video editing?</strong> yeah i do this.
+        </p>
+        <div class="image-gallary">
+          <img id="item-image" src="https://cdn.pixabay.com/photo/2024/09/12/14/56/lake-9042527_1280.png"
+            alt="Project One Preview" />
+          <img id="item-image" src="https://cdn.pixabay.com/photo/2024/09/12/14/56/lake-9042527_1280.png"
+            alt="Project One Preview" />
+          <img id="item-image" src="https://cdn.pixabay.com/photo/2024/09/12/14/56/lake-9042527_1280.png"
+            alt="Project One Preview" />
+        </div>
       </div>
 
-      <!-- Right Side: Detailed Previews of Selected Projects -->
-      <div class="project-details">
-        <div id="project-1" class="project-content active">
-         <div class="homeHeading">
-           <img src="https://cdn.pixabay.com/photo/2022/07/03/21/43/mountain-7300017_1280.jpg" alt="logo-image"  id="profile">
-          <h2>Hi IT's me I can do... </h2>
-         </div>
-          <p>
-           Professional and Creative Web Development. I am a full stack developer.I can duplicate any website.
-           and i can Do video editing. <strong>Video editing?</strong> yeah i do this. 
-          </p>
-          <div class="image-gallary">
-          <img id="item-image" src="https://cdn.pixabay.com/photo/2024/09/12/14/56/lake-9042527_1280.png" alt="Project One Preview" />
-          <img id="item-image" src="https://cdn.pixabay.com/photo/2024/09/12/14/56/lake-9042527_1280.png" alt="Project One Preview" />
-          <img id="item-image" src="https://cdn.pixabay.com/photo/2024/09/12/14/56/lake-9042527_1280.png" alt="Project One Preview" />
+      <div id="project-2" class="project-content">
+        <h2>Project Two: Mobile App Design</h2>
+        <p>
+          A mobile app design prototype developed with Figma, focusing on user
+          experience and seamless navigation.
+        </p>
+        <div class="image-gallary">
+          <img id="item-image" src="https://cdn.pixabay.com/photo/2023/10/30/01/31/duck-8351436_1280.jpg"
+            alt="Project One Preview" />
+          <img id="item-image" src="https://cdn.pixabay.com/photo/2023/10/30/01/31/duck-8351436_1280.jpg"
+            alt="Project One Preview" />
+          <img id="item-image" src="https://cdn.pixabay.com/photo/2023/10/30/01/31/duck-8351436_1280.jpg"
+            alt="Project One Preview" />
+        </div>
+      </div>
+      <div id="project-3" class="project-content">
+        <h2>Project Three: Branding and Identity</h2>
+        <p>
+          A branding project focused on creating a consistent visual identity
+          for a new tech startup, incorporating logo design, color palettes,
+          and typography.
+        </p>
+        <div class="image-gallary">
+          <img id="item-image" src="https://cdn.pixabay.com/photo/2023/10/30/01/31/duck-8351436_1280.jpg"
+            alt="Project One Preview" />
+          <img id="item-image" src="https://cdn.pixabay.com/photo/2023/10/30/01/31/duck-8351436_1280.jpg"
+            alt="Project One Preview" />
+          <img id="item-image" src="https://cdn.pixabay.com/photo/2023/10/30/01/31/duck-8351436_1280.jpg"
+            alt="Project One Preview" />
+        </div>
+      </div>
+      <div id="project-4" class="project-content">
+        <h2>Project Four: E-Commerce Website</h2>
+        <p>
+          An e-commerce platform built with Shopify, including custom product
+          pages, shopping cart functionality, and payment integrations.
+        </p>
+        <div class="image-gallary">
+          <img id="item-image" src="https://cdn.pixabay.com/photo/2023/10/30/01/31/duck-8351436_1280.jpg"
+            alt="Project One Preview" />
+          <img id="item-image" src="https://cdn.pixabay.com/photo/2023/10/30/01/31/duck-8351436_1280.jpg"
+            alt="Project One Preview" />
+          <img id="item-image" src="https://cdn.pixabay.com/photo/2023/10/30/01/31/duck-8351436_1280.jpg"
+            alt="Project One Preview" />
+        </div>
+      </div>
+      <div id="project-5" class="project-content">
+        <h2>Project Five: Data Visualization</h2>
+        <p>
+          This project focuses on data visualization using D3.js, displaying
+          complex datasets in an easily understandable and visually appealing
+          way.
+        </p>
+        <div class="image-gallary">
+          <img id="item-image" src="https://cdn.pixabay.com/photo/2023/10/30/01/31/duck-8351436_1280.jpg"
+            alt="Project One Preview" />
+          <img id="item-image" src="https://cdn.pixabay.com/photo/2023/10/30/01/31/duck-8351436_1280.jpg"
+            alt="Project One Preview" />
+          <img id="item-image" src="https://cdn.pixabay.com/photo/2023/10/30/01/31/duck-8351436_1280.jpg"
+            alt="Project One Preview" />
+        </div>
+      </div>
+      <!-- test -->
+      <div id="project-6" class="project-content">
+        <h2>hi</h2>
+        <p>
+          This project focuses on data visualization using D3.js, displaying
+          complex datasets in an easily understandable and visually appealing
+          way.
+        </p>
+        <div class="image-gallary">
+          <img id="item-image" src="https://cdn.pixabay.com/photo/2023/10/30/01/31/duck-8351436_1280.jpg"
+            alt="Project One Preview" />
+          <img id="item-image" src="https://cdn.pixabay.com/photo/2023/10/30/01/31/duck-8351436_1280.jpg"
+            alt="Project One Preview" />
+          <img id="item-image" src="https://cdn.pixabay.com/photo/2023/10/30/01/31/duck-8351436_1280.jpg"
+            alt="Project One Preview" />
+        </div>
+      </div>
+      <!-- none -->
+      <div id="project-7" class="project-content">
+        <h2>Contact</h2>
+        <p>
+          This project focuses on data visualization using D3.js, displaying
+          complex datasets in an easily understandable and visually appealing
+          way.
+        </p>
+        <form class="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
           </div>
-        </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit">Send</button>
+        </form>
 
-        <div id="project-2" class="project-content">
-          <h2>Project Two: Mobile App Design</h2>
-          <p>
-            A mobile app design prototype developed with Figma, focusing on user
-            experience and seamless navigation.
-          </p>
-          <div class="image-gallary">
-            <img id="item-image" src="https://cdn.pixabay.com/photo/2023/10/30/01/31/duck-8351436_1280.jpg" alt="Project One Preview" />
-            <img id="item-image" src="https://cdn.pixabay.com/photo/2023/10/30/01/31/duck-8351436_1280.jpg" alt="Project One Preview" />
-            <img id="item-image" src="https://cdn.pixabay.com/photo/2023/10/30/01/31/duck-8351436_1280.jpg" alt="Project One Preview" />
-            </div>
-        </div>
-        <div id="project-3" class="project-content">
-          <h2>Project Three: Branding and Identity</h2>
-          <p>
-            A branding project focused on creating a consistent visual identity
-            for a new tech startup, incorporating logo design, color palettes,
-            and typography.
-          </p>
-          <div class="image-gallary">
-            <img id="item-image" src="https://cdn.pixabay.com/photo/2023/10/30/01/31/duck-8351436_1280.jpg" alt="Project One Preview" />
-            <img id="item-image" src="https://cdn.pixabay.com/photo/2023/10/30/01/31/duck-8351436_1280.jpg" alt="Project One Preview" />
-            <img id="item-image" src="https://cdn.pixabay.com/photo/2023/10/30/01/31/duck-8351436_1280.jpg" alt="Project One Preview" />
-            </div>
-        </div>
-        <div id="project-4" class="project-content">
-          <h2>Project Four: E-Commerce Website</h2>
-          <p>
-            An e-commerce platform built with Shopify, including custom product
-            pages, shopping cart functionality, and payment integrations.
-          </p>
-          <div class="image-gallary">
-            <img id="item-image" src="https://cdn.pixabay.com/photo/2023/10/30/01/31/duck-8351436_1280.jpg" alt="Project One Preview" />
-            <img id="item-image" src="https://cdn.pixabay.com/photo/2023/10/30/01/31/duck-8351436_1280.jpg" alt="Project One Preview" />
-            <img id="item-image" src="https://cdn.pixabay.com/photo/2023/10/30/01/31/duck-8351436_1280.jpg" alt="Project One Preview" />
-            </div>
-        </div>
-        <div id="project-5" class="project-content">
-          <h2>Project Five: Data Visualization</h2>
-          <p>
-            This project focuses on data visualization using D3.js, displaying
-            complex datasets in an easily understandable and visually appealing
-            way.
-          </p>
-          <div class="image-gallary">
-            <img id="item-image" src="https://cdn.pixabay.com/photo/2023/10/30/01/31/duck-8351436_1280.jpg" alt="Project One Preview" />
-            <img id="item-image" src="https://cdn.pixabay.com/photo/2023/10/30/01/31/duck-8351436_1280.jpg" alt="Project One Preview" />
-            <img id="item-image" src="https://cdn.pixabay.com/photo/2023/10/30/01/31/duck-8351436_1280.jpg" alt="Project One Preview" />
-            </div>
-        </div>
-        <!-- test -->
-        <div id="project-6" class="project-content">
-          <h2>hi</h2>
-          <p>
-            This project focuses on data visualization using D3.js, displaying
-            complex datasets in an easily understandable and visually appealing
-            way.
-          </p>
-          <div class="image-gallary">
-            <img id="item-image" src="https://cdn.pixabay.com/photo/2023/10/30/01/31/duck-8351436_1280.jpg" alt="Project One Preview" />
-            <img id="item-image" src="https://cdn.pixabay.com/photo/2023/10/30/01/31/duck-8351436_1280.jpg" alt="Project One Preview" />
-            <img id="item-image" src="https://cdn.pixabay.com/photo/2023/10/30/01/31/duck-8351436_1280.jpg" alt="Project One Preview" />
-            </div>
-        </div>
-        <!-- none -->
-        <div id="project-7" class="project-content">
-          <h2>Contact</h2>
-          <p>
-            This project focuses on data visualization using D3.js, displaying
-            complex datasets in an easily understandable and visually appealing
-            way.
-          </p>
-          <form class="contact-form">
-            <div class="form-group">
-              <label for="name">Name</label>
-              <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" required></textarea>
-            </div>
-            <button type="submit">Send</button>
-          </form>
-         
-        </div>
-   
+      </div>
 
-    <!-- JavaScript for Hover-triggered Dynamic Content -->
-    <script src="script.js"></script>
-  </body>
+
+      <!-- JavaScript for Hover-triggered Dynamic Content -->
+      <script src="script.js"></script>
+</body>
+
 </html>
