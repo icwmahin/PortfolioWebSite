@@ -1,24 +1,16 @@
-// Optional JavaScript for sticky navigation highlighting current section
+// Smooth Scroll Functionality
+const links = document.querySelectorAll("nav ul li a");
+links.forEach((link) => {
+  link.addEventListener("click", smoothScroll);
+});
 
-// window.addEventListener("scroll", function () {
-//   const sections = document.querySelectorAll("section");
-//   const navLinks = document.querySelectorAll(".sticky-nav a");
-
-//   let currentSection = "";
-
-//   sections.forEach((section) => {
-//     const sectionTop = section.offsetTop;
-//     if (pageYOffset >= sectionTop - 60) {
-//       currentSection = section.getAttribute("id");
-//     }
-//   });
-
-//   navLinks.forEach((link) => {
-//     link.classList.remove("active");
-//     if (link.getAttribute("href").includes(currentSection)) {
-//       link.classList.add("active");
-//     }
-//   });
-// });
-//? Old code in up
-// !new code here
+function smoothScroll(event) {
+  event.preventDefault();
+  const href = this.getAttribute("href");
+  const element = document.querySelector(href);
+  const offsetTop = element.offsetTop;
+  window.scrollTo({
+    top: offsetTop,
+    behavior: "smooth",
+  });
+}
